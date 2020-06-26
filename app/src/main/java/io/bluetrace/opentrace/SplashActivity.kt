@@ -28,9 +28,10 @@ class SplashActivity : AppCompatActivity() {
                     needToUpdateApp = true
                     intent = Intent(Intent.ACTION_VIEW);
                     //Copy App URL from Google Play Store.
-                    intent.data = Uri.parse(BuildConfig.STORE_URL)
+                    // ZODAJ Below two lines commented out bc no STORE_URL
+                    // intent.data = Uri.parse(BuildConfig.STORE_URL)
 
-                    startActivity(intent)
+                    //startActivity(intent)
                     finish()
                 }
             }

@@ -18,7 +18,8 @@ class WebViewActivity : FragmentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.webview)
         webview.webViewClient = WebViewClient()
-        webview.loadUrl(BuildConfig.PRIVACY_URL)
+        //ZODAJ below line commented because no Privacy_url
+        //webview.loadUrl(BuildConfig.PRIVACY_URL)
 
         val wbc: WebChromeClient = object : WebChromeClient() {
             override fun onCloseWindow(w: WebView) {
